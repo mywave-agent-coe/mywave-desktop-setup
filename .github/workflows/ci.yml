@@ -1,0 +1,13 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  html-lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Lint HTML
+        run: npx --yes html-validate index.html
