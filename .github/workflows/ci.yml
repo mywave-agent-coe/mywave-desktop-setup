@@ -6,6 +6,7 @@ on:
 
 jobs:
   html-lint:
+    name: HTML Lint
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
